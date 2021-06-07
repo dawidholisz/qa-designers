@@ -23,7 +23,7 @@ class CurrentWeather extends Component {
     ]
 
     return (
-      <div className="weather__current">
+      <div className="weather__current" data-testId="current-weather">
         <h1 className="weather__current__temperature">{temp_c}°C</h1>
         <h2 className="weather__current__condition">{conditions[0].main}</h2>
         <h4 className="weather__current__date">{new Date(localTime * 1000).toLocaleString()}</h4>

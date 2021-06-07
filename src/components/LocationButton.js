@@ -12,6 +12,7 @@ const LocationButton = props => {
         props.onClick()
       }}
       size="lg"
+      data-testId="location-btn"
     />
   )
 }

@@ -11,7 +11,7 @@ const validationSchema = Yup.object().shape({
 
 const DialogModal = ({ isVisible, setLocation, closeModal, header, description }) => {
   return (
-    <div className={classNames('modal', { '-visible': isVisible })}>
+    <div className={classNames('modal', { '-visible': isVisible })} data-testId="location-modal">
       <Formik
         initialValues={{ location: localStorage.getItem('weatherLocation') }}
         onSubmit={(values, { setSubmitting }) => {
@@ -42,10 +42,11 @@ const DialogModal = ({ isVisible, setLocation, closeModal, header, description }
                   placeholder="Weather Location"
                   type="text"
                   value={values.location}
+                  data-testId="city-input"
                 />
                 {errors.location && touched.location && errors.location}
               </div>
-              <button className="set-button" disabled={isSubmitting} type="submit">
+              <button className="set-button" disabled={isSubmitting} type="submit" data-testid="save-city-btn">
                 Set
               </button>
             </form>
