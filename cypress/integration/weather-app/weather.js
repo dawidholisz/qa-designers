@@ -33,8 +33,6 @@ context('WeatherApp', () => {
       cy.get('[data-testId="save-city-btn"]').click()
     })
 
-    cy.wait('@getWeather')
-
     cy.get('[data-testId="weather-div"]').should('have.class', 'weather--day')
   })
 })
