@@ -44,7 +44,7 @@ const DialogModal = ({ isVisible, setLocation, closeModal, header, description }
                   value={values.location}
                   data-testId="city-input"
                 />
-                {errors.location && touched.location && errors.location}
+                <div className="modal__error">{errors.location && touched.location && errors.location}</div>
               </div>
               <button className="set-button" disabled={isSubmitting} type="submit" data-testid="save-city-btn">
                 Set

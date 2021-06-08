@@ -48,7 +48,8 @@ $max-weather-icon-height: 32px;
 
     &__condition {
       font-weight: $font-weight-regular;
-      margin: 0;
+      letter-spacing: .2px;
+      margin-bottom: $m-xs;
     }
 
     &__date {
@@ -136,10 +137,12 @@ $max-weather-icon-height: 32px;
   &__day {
     &__date {
       color: $color-gray-dark;
+      padding: $m-sm 0;
       width: 50%;
     }
 
     &__icon {
+      padding: $m-sm 0;
       width: 50%;
 
       img {
@@ -150,7 +153,11 @@ $max-weather-icon-height: 32px;
 
     &__max-temp {
       color: $color-gray-dark;
-      padding: 0 $m-sm;
+      padding: $m-sm;
+    }
+
+    &__min-temp {
+      padding: $m-sm;
     }
 
     &:nth-child(2n) {

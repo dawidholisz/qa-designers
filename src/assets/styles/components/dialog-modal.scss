@@ -20,7 +20,7 @@ $set-button-height: 32px;
   }
 
   &__description {
-    text-align: center;
+    margin-bottom: $m-sm;
   }
 
   &__dialog {
@@ -36,24 +36,35 @@ $set-button-height: 32px;
   }
 
   &__input {
-    text-align: center;
 
     label {
       display: block;
+      font-size: $font-size-sm;
+      font-weight: $font-weight-bold;
+      letter-spacing: .2px;
+      margin-bottom: $m-xs;
+      text-transform: uppercase;
     }
 
     input {
-      text-align: center;
       border: {
         color: $sunset-background-start-color;
         style: solid;
+        radius: $m-xs;
         width: 2px;
       }
+      padding: $m-xs $m-sm;
 
       &:focus {
         border-color: $sunset-background-end-color;
       }
     }
+  }
+
+  &__error {
+    color: $brand-danger;
+    font-size: $font-size-sm;
+    margin-top: $m-xs;
   }
 
   .close-button {
