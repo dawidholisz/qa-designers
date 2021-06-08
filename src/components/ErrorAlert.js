@@ -12,6 +12,8 @@ const ErrorAlert = ({ isVisible, header, errorMessage, refreshWeather, closeModa
         </button>
 
         <h1>{header}</h1>
+
+        sf
         <div className="modal__description">
           <p>{errorMessage}</p>
         </div>
