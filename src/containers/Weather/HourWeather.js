@@ -7,7 +7,7 @@ class HourWeather extends Component {
     return (
       <div className="weather__hour">
         <p>{this.props.hour === new Date().getHours() ? <strong>Now</strong> : this.props.hour}</p>
-        <FontAwesomeIcon icon={this.props.iconName} size="lg" />
+        <FontAwesomeIcon className="awesome-icon" icon={this.props.iconName} size="lg" />
         <p>{this.props.temperature}°C</p>
       </div>
     )

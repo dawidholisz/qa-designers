@@ -16,6 +16,21 @@ $nth-table-row-background: #F9F9F9;
 
 $max-weather-icon-height: 32px;
 
+@keyframes awesome-animation {
+  0%, 100% {
+    color: yellow;
+    transform: scale(1.9) rotate(0deg);
+  }
+  50% {
+    color: darkorange;
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.awesome-icon {
+  animation: 2s awesome-animation infinite ease-in-out;
+}
+
 .weather {
   display: flex;
   flex-direction: column;
@@ -79,10 +94,6 @@ $max-weather-icon-height: 32px;
       bottom: $m-md;
       top: $m-md;
     };
-    border: {
-      top-left-radius:$border-radius-lg*1.5;
-      top-right-radius:$border-radius-lg*1.5;
-    };
 
     &.-md {
       display: none;
@@ -116,7 +127,7 @@ $max-weather-icon-height: 32px;
 
 .weather-next-week {
   text-align: center;
-  margin: {
+  padding: {
     left: $m-md;
     right: $m-md;
   };
@@ -161,7 +172,7 @@ $max-weather-icon-height: 32px;
 
 .weather-details {
   text-align: center;
-  margin: {
+  padding: {
     left: $m-md;
     right: $m-md;
   };
@@ -249,11 +260,6 @@ $max-weather-icon-height: 32px;
     }
 
     &__slider {
-      border: {
-        bottom-left-radius: $border-radius-lg * 1.5;
-        top-right-radius: 0;
-      };
-
       &.-md {
         flex-direction: column;
         height: 100%;
