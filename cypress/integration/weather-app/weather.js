@@ -24,7 +24,7 @@ context('WeatherApp', () => {
     })
   })
 
-  it('shows day theme for weather and checks if Current Weather is displayed', () => {
+  it('shows day theme for weather and checks if Current Weather exists sth1', () => {
     cy.intercept('GET', 'https://api.openweathermap.org/**', { fixture: 'weather-day.json' }).as('getWeather')
 
     cy.get('[data-testId="location-btn"]').click()
