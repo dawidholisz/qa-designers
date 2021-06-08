@@ -1,7 +1,7 @@
 {
   "lat": 49.8224,
   "lon": 19.0584,
-  "timezone": "Europe/Warsaw",
+  "timezone": "Europe/Moscow",
   "timezone_offset": 7200,
   "current": {
     "dt": 1623061709,
