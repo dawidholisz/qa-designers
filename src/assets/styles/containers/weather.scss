@@ -1,5 +1,5 @@
-$background-day-start-color: #FDC6C6;
-$background-day-end-color: #E6D3DF;
+$background-day-start-color: #7be8da;
+$background-day-end-color: #41436d;
 $background-day-gradient: linear-gradient(180deg, $background-day-start-color 0%, $background-day-end-color 60%);
 $background-day-image: url('../../images/day-background.png');
 
@@ -27,6 +27,7 @@ $max-weather-icon-height: 32px;
     background: {
       position: right top;
       repeat: no-repeat;
+      padding-top: 10px;
     };
     padding: {
       bottom: $m-md;
@@ -67,6 +68,7 @@ $max-weather-icon-height: 32px;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
+      color: $color-white;
     }
   }
 
@@ -94,7 +96,6 @@ $max-weather-icon-height: 32px;
   }
 
   &--day {
-    background: $background-day-start-color;
     background: $background-day-gradient;
     color: $color-black;
 
@@ -104,7 +105,6 @@ $max-weather-icon-height: 32px;
   }
 
   &--night {
-    background: $background-night-start-color;
     background: $background-night-gradient;
     color: $color-white;
 
