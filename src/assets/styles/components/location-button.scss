@@ -6,8 +6,12 @@ $icon-space: 16px;
   position: fixed;
   top: $icon-space;
   z-index: $z-high;
+  color: $color-white;
 
   &.-night {
     color: $color-white;
+  }
+  &:hover {
+    color: $brand-primary;
   }
 }
